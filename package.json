@@ -1,0 +1,17 @@
+{
+  "name": "ts-tester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vanilla.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-modules": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21"
+  }
+}
