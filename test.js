@@ -56,7 +56,9 @@ for (var _i = 0, data_1 = data; _i < data_1.length; _i++) {
     dates.push(item.dt);
     var temp = Object.assign({}, item);
     delete temp.dt;
-    dataMap.get(item.dt) ? dataMap.get(item.dt).push(temp) : dataMap.set(item.dt, [temp]);
+    dataMap.has(item.dt) ? dataMap.get(item.dt).push(temp) : dataMap.set(item.dt, [temp]);
 }
 var dateSet = new Set(dates);
-var meow = 'meow';
+alert(dataMap.values());
+console.log(dataMap);
+console.log(dateSet);

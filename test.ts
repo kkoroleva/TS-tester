@@ -12,7 +12,7 @@ interface IDataItem {
     temp: ITemp;
 }
 
-let data : IDataItem[] = [{
+const data : IDataItem[] = [{
     "dt": "01-01-2021",
     "quantity": 100,
     "age": null,
@@ -70,8 +70,9 @@ for (let item of data) {
     dates.push(item.dt);
     const temp = Object.assign({}, item);
     delete temp.dt; 
-    dataMap.get(item.dt)? dataMap.get(item.dt).push(temp) : dataMap.set(item.dt, [temp]);
+    dataMap.has(item.dt)? dataMap.get(item.dt).push(temp) : dataMap.set(item.dt, [temp]);
 }
 let dateSet = new Set(dates);
 
-let meow : string = 'meow';
+console.log(dataMap);
+console.log(dateSet);
