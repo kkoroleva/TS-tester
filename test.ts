@@ -2,7 +2,7 @@
 interface ITemp {
     temperature: string;
     city: string;
-    optional?: Boolean;
+    optional?: boolean;
 }
 
 interface IDataItem {
