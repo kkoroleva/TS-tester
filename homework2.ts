@@ -49,9 +49,9 @@ function generateCatalog() : string[][] {
     return flats;
 };
 
-const minSquare = 40;
-const neededSquare = 'Ленина';
-const bestSquare = 56;
+const minSquare : number = 40;
+const neededSquare: string = 'Ленина';
+const bestSquare : number = 56;
 
 function isSuitable(square: string, street: string) : boolean {
     if (+square <= minSquare && street === neededSquare || +square === bestSquare) {
