@@ -59,6 +59,5 @@ for (var _i = 0, data_1 = data; _i < data_1.length; _i++) {
     dataMap.has(item.dt) ? dataMap.get(item.dt).push(temp) : dataMap.set(item.dt, [temp]);
 }
 var dateSet = new Set(dates);
-alert(dataMap.values());
 console.log(dataMap);
 console.log(dateSet);
