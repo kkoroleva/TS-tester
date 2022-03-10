@@ -50,7 +50,7 @@ function generateCatalog() : string[][] {
 };
 
 const minSquare = 40;
-const neededSquare = 'Ленина'
+const neededSquare = 'Ленина';
 const bestSquare = 56;
 
 function isSuitable(square: string, street: string) : boolean {
