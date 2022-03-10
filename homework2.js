@@ -43,8 +43,11 @@ function generateCatalog() {
     return flats;
 }
 ;
+var minSquare = 40;
+var neededSquare = 'Ленина';
+var bestSquare = 56;
 function isSuitable(square, street) {
-    if (+square <= 40 && street === 'Ленина' || +square === 56) {
+    if (+square <= minSquare && street === neededSquare || +square === bestSquare) {
         return true;
     }
     return false;
